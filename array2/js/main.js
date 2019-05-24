@@ -7,14 +7,18 @@ names = ["Tomas", "Pietkus", 25, "VDU - inzinerija"];
 auto = ["opel", "bmw", "mazda", "mocas"];
 names.shift() //shift - istryne pirmaji masivo elementa, nu graziausia masyvas liko be Tomas
 console.log(names);
+
 names.unshift("vedes")//unshift - ideda nauja index i array'ju I PRIEKI
 console.log(names);
+
 names[names.length] = "ITysnikas"; //length - idejo i masyva nauja index elementa pacioje pabaigoje
 console.log(names);
 
 naujasmasyv = names.concat(auto);//concat-sujunge du masyvus i viena nauja,
 //pirma eina pirmo masyvo elementai, paskui antrojo
 console.log(naujasmasyv);
+
+
 sumazinta = names.slice(3); // slice - istryne elementus nuo nulinio iki antrojo (tris elementus)
 console.log(sumazinta);
 
@@ -32,6 +36,11 @@ console.log("po splice" + names);
 
 names.splice(0, 3);
 console.log("po splice-istrynimas" + names);
+
+
+//masyvo ilgi suzinoti
+let ilgis = names.length;
+console.log("masyvo ilgis    " + ilgis);
 
 // =========================================================
 // SAVARANKISKA UZDUOTIS  Array
@@ -56,14 +65,28 @@ console.log(keliautojas);
 // 5.1  sukurti masyva naudojant WHILE (50 ilgumo) ir uzpildyti visa skaiciumi 1;
 let i = 0;
 let vienetai = [];
-while (i < 50) {
-    vienetai.push(1);
-  i++;
+
+// while (i < 50) {
+//     vienetai.push(1);
+//   i++;
+// }
+
+for (let i = 0; i < 50; i++) {
+    vienetai[i] = 1;
 }
-document.write(vienetai);
+console.log(vienetai.join(":"));
+
+for (let i = 1; i < vienetai.length; i++) {
+    vienetai[i] = 3;
+    i++;
+}
+    console.log(vienetai);
 
 // 5.2: kas antra ^ masyvo elementa pakeisti i "3"
 // [1, 3, 1, 3, 1, 3, 1, 3, 1, 3, ....
+
+//1-rasti kas antra i masyvo elementa(1variantas jei i padalinus is dvieju liekana =0, kitas variantas )
+//2-pakeisti ji i 3, jo reiksmes
 
 
 // 5.3: kas 5-ta ^ masyvo elementa pakeisti i "9"
