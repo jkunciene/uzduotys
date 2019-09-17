@@ -1,19 +1,22 @@
-html{
-  margin: 50px;
-}
-h1, h2, h3, h4 {
-  text-align: center;
+h1{
+  line-height: center;
   text-transform: uppercase;
-}
-body {
-  
-}
-
-article {
-text-align: justify;
+  font-family: 'Gayathri', sans-serif;
+  font-size: 3em;
 }
 
-p {
-  
+h2{
+  text-align: right;
+  font-family: 'Gayathri', sans-serif;
+  font-size: 2em;
+}
 
+article{
+  font-family: 'Cute Font', cursive;
+  text-align: justify;
+
+}
+
+footer{
+  text-align: center;
 }
